@@ -87,12 +87,12 @@ insert into  alternate values('ZGGGYSSY','330','A330','NZAA,AYPY,NWWW,NZCH,RPLL,
 insert into  alternate values('CANSYD01','330','A330','NZAA,AYPY,NWWW,NZCH,RPLL,RPMD,RPMZ,RPVM,VVTS,WAAA,WABB,WADD,WAMM,WBKK,WBSB,WIII,WSSS,YBAS,YBCS,YBRK,YBTL,YPAD,YPDN,YPEA,YPLM,YPPH,YPTN,YSCB,YSSY,RPLC');  --按航路代码
 ------示例数据,结束----
 说明:
-  查询航线 :  只通过 flightPlan表alternate字段,获取备降机场,无论是否指定机型。 
-  调取指定航线 :
+  查询航线, 调取指定航线 :
        如果指定机型,则通过alternate表查询备降场,忽略flightPlan表中的备降场。
           分别用 routeid, departure+arrival, departure, arrival 查询alternate表, 结果合并去重。
-       如果没有指定机型,通过 flightPlan表alternate字段,获取备降机场。
-  jeppFD app 显示备降场,以"调取指定航线"输出的备降场为准。 
+       如果没有指定机型,
+          只通过 flightPlan表alternate字段,获取备降机场。
+  jeppFD app 地图上显示的航路和备降场,以"调取指定航线"输出的内容为准。 
   download:  https://github.com/osnosn/jeppFlightPlan/ 
 ------JeppFD-Pro 或 FliteDeckPro 配置说明----
  创建好"航线数据库"，配置好 ini 文件，然后运行这个程序。
@@ -114,7 +114,7 @@ insert into  alternate values('CANSYD01','330','A330','NZAA,AYPY,NWWW,NZCH,RPLL,
 
   打开 FliteDeckPro , 
   找到 "Flight Plans" ,在"Call sign"位置,输入icao或iata机场对(不能包含空格)，就能看到航路计划了。
-
+     比如: CANSYD 或者 ZGGGYSSY 
  -----
  使用说明：
  jepp FliteDeckPro FlightPlan 查询。
