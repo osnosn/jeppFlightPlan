@@ -8,8 +8,8 @@ Compiled by golang-1.16.
  | amd64-linux-jeppFlightPlan.gz          | x86 64bit linux 命令行的可执行文件 |
  | aarch64-linux-jeppFlightPlan-static.gz | arm 64bit linux 命令行的可执行文件,静态链接 |
  |  amd64-linux-jeppFlightPlan-static.gz  | x86 64bit linux 命令行的可执行文件,静态链接 |
- |  win32-jeppFlightPlan.exe.zip)         | windows 32bit 命令行的可执行文件 |
- |  win64-jeppFlightPlan.exe.zip)         | windows 64bit 命令行的可执行文件 |
+ |  win32-jeppFlightPlan.exe.zip         | windows 32bit 命令行的可执行文件 |
+ |  win64-jeppFlightPlan.exe.zip         | windows 64bit 命令行的可执行文件 |
  |   [example.ini](example.ini)   | ini 示例文件。使用前改名为,与执行文件同名 |
  | [flightPlan.db](flightPlan.db) | 数据库示例文件   |
  

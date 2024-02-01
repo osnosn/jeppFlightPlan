@@ -30,4 +30,5 @@
 ------
 ## 服务程序，golang版，见【[golang-bin](golang-bin)】  
 ## 服务程序，rust版，见【[rust-bin](rust-bin)】  
+## Download下载 golang,rust版，见【[releases](https://github.com/osnosn/jeppFlightPlan/releases)】  
 
