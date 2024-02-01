@@ -4,12 +4,12 @@ Write in rust on 2024-1-26.
 Compiled by cargo.(rustup-1.26.0, rustc-1.70.0, cargo-1.70.0)   
  | 【[Download 下载](https://github.com/osnosn/jeppFlightPlan/releases)】 v0.3.1 |   |
  |--------|-------|
- | [aarch64-linux](jeppFlightPlan_aarch64-linux-gnu.gz) | arm 64bit linux 命令行的可执行文件 |
- |   [amd64-linux](jeppFlightPlan_x86_64-linux-gnu.gz)   | x86 64bit linux 命令行的可执行文件 |
- |   [amd64-linux](jeppFlightPlan_x86_64-linux-musl.gz) | x86 64bit linux 命令行的可执行文件 |
- |   [mipsel-op22](jeppFlightPlan_mipsel-linux-musl-op22.gz) | openwrt22, mpsel 命令行的可执行文件,动态链接 |
- |         [win32](jeppFlightPlan_i686-gnu.exe.gz)  | windows 32bit 命令行的可执行文件 |
- |         [win64](jeppFlightPlan_x86_64-gnu.exe.gz)  | windows 64bit 命令行的可执行文件 |
+ | jeppFlightPlan_aarch64-linux-gnu.gz      | arm 64bit linux 命令行的可执行文件 |
+ | jeppFlightPlan_x86_64-linux-gnu.gz       | x86 64bit linux 命令行的可执行文件 |
+ | jeppFlightPlan_x86_64-linux-musl.gz      | x86 64bit linux 命令行的可执行文件 |
+ | jeppFlightPlan_mipsel-linux-musl-op22.gz | openwrt22, mpsel 命令行的可执行文件,动态链接 |
+ | jeppFlightPlan_i686-gnu.exe.gz           | windows 32bit 命令行的可执行文件 |
+ | jeppFlightPlan_x86_64-gnu.exe.gz         | windows 64bit 命令行的可执行文件 |
  
  ".gz" 是压缩文件，需要解压缩。3个Linux是静态链接文件。不依赖系统的动态库。    
  rust编译生成的windows程序，如果防毒误报。添加例外信任即可。   
