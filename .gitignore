@@ -1,0 +1,3 @@
+*.gz
+*.zip
+/cmd-git-reinit.sh
