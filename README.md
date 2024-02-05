@@ -28,7 +28,10 @@
  ![jeppUse2](jeppUse2.png)
  ![jeppUse3](jeppUse3.png)
 ------
-## 服务程序，golang版，见【[golang-bin](golang-bin)】  
-## 服务程序，rust版，见【[rust-bin](rust-bin)】  
-## Download下载 golang,rust版，见【[releases](https://github.com/osnosn/jeppFlightPlan/releases)】  
+### 服务程序，golang版，见【[golang-bin](golang-bin)】  
+* 2022-10写的版本，golang的可执行文件体积较大。   
+### 服务程序，rust版，见【[rust-bin](rust-bin)】  
+* 学习了一下rust，2024-01重写的版本，可执行文件体积较小。占用内存也较小。   
+### Download下载 golang,rust版，见【[releases](https://github.com/osnosn/jeppFlightPlan/releases)】  
+* 两个版本功能基本相同。使用的数据库(.db)是相同的。使用的配置文件(.ini) 稍有差异。  
 

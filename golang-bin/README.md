@@ -1,4 +1,4 @@
-Executable binary file.   
+Executable binary file. 2022-10.   
 
 Compiled by golang-1.16.   
   use go-sqlite3 1.14.3   
@@ -13,6 +13,7 @@ Compiled by golang-1.16.
  |   [example.ini](example.ini)   | ini 示例文件。使用前改名为,与执行文件同名 |
  | [flightPlan.db](flightPlan.db) | 数据库示例文件   |
  
+ ".gz",".zip" 是压缩文件，需要解压缩。   
  golang编译生成的windows程序，防毒基本都会误报。添加例外信任即可。   
  
  --------------
