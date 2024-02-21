@@ -3,7 +3,7 @@ Executable binary file.
 Write in rust on 2024-1-26. 用rust重写。   
 Compiled by cargo.(rustup-1.26.0, rustc-1.70.0, cargo-1.70.0)   
 Use rusqlite-0.30.0 crate.   
- | 【[Download 下载](https://github.com/osnosn/jeppFlightPlan/releases)】 v0.3.1 |   |
+ | 【[Download 下载](https://github.com/osnosn/jeppFlightPlan/releases)】 v0.3.2 |   |
  |--------|-------|
  | jeppFlightPlan_aarch64-linux-gnu.gz      | arm 64bit linux 命令行的可执行文件 |
  | jeppFlightPlan_x86_64-linux-gnu.gz       | x86 64bit linux 命令行的可执行文件 |
@@ -35,8 +35,9 @@ Usage: jeppFlightPlan [-h | --help] [-c config.ini] [run | showini | createdb]
       showini   显示ini配置示例
       createdb  创建示例数据库 (db文件名在ini中配置)
  ----ini配置文件----
- #服务设置
+ #此配置文件必须是 UTF-8 格式.
  ;注释
+ #服务设置
  [webserver]             #注释,"#"前必须有一个空格,才是注释
  #address=0.0.0.0:8080   #监听地址和端口
  #address=[::]:8080      # IPv6
