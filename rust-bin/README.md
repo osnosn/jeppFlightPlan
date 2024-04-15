@@ -83,7 +83,7 @@ CREATE INDEX alternateidx on alternate(airport);
 ------示例数据,开始----
 insert into user values(1,'test','test001');
 
-insert into flightPlan values(1000,1,datetime('now','localtime'),'HELP','INFO','MESSAGE','This is a INFO msg.','If you have any suggestion or comments, PLS send email to LLGZ@csair.com');
+insert into flightPlan values(1000,1,datetime('now','localtime'),'HELP','INFO','MESSAGE','This is a INFO msg.','If you have any suggestion or comments, PLS send email to osnosn@126.com');
 insert into flightPlan values('1001','1','2022-10-14 20:28:55','CANPEK01','ZGGG','ZBAA','ZGSZ,ZGKL,ZJHK,ZHHH,ZSHC,ZYTX,ZYTL,ZBTJ,ZHCC','ZGGG YIN1A YIN A461 WXI A461 HG W81 BOBAK BOBA7A ZBAA');
 insert into flightPlan values('1002','1','2022-10-14 20:28:55','PEKCAN01','ZBAA','ZGGG','ZYTX,ZYTL,ZBTJ,ZHCC,ZGSZ,ZGKL,ZJHK,ZHHH,ZSHC','ZBAA REN12D RENOB G212 LARAD B458 WXI A461 LIG R473 R473 R473 BEMAG V5 ATAGA ATA1A ZGGG');
 insert into flightPlan values('1003','1','2022-10-14 20:28:55','CANCTU01','ZGGG','ZUUU','ZGSZ,ZGKL,ZJHK,ZHHH,ZSHC,ZUCK','ZGGG YIN1E YIN G586  QP B330 ELKAL W179 XYO W25 FJC FJC01A ZUUU');
