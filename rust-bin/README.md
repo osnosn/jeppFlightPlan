@@ -157,12 +157,14 @@ insert into  alternate values('CANSYD01','330','A330','NZAA,AYPY,NWWW,NZCH,RPLL,
   ```
   location /jepp/ {
     proxy_http_version 1.1;
-    proxy_pass http://127.0.0.1:7878/jepp/;
+    proxy_pass http://127.0.0.1:7878;
+    #or# proxy_pass http://127.0.0.1:7878/jepp/;
     proxy_set_header XForwarded-For $proxy_add_x_forwarded_for;
   }
   location /jeppS/ {
     proxy_http_version 1.1;
-    proxy_pass http://127.0.0.1:7878/jeppS/;
+    proxy_pass http://127.0.0.1:7878;
+    #or# proxy_pass http://127.0.0.1:7878/jeppS/;
     proxy_set_header XForwarded-For $proxy_add_x_forwarded_for;
   }
   ```
