@@ -145,3 +145,25 @@ insert into  alternate values('CANSYD01','330','A330','NZAA,AYPY,NWWW,NZCH,RPLL,
      比如: CANSYD 或者 ZGGGYSSY 
  -----
 ```
+------
+## nginx 配置样例
+* 假设 jeppFlightPlan 监听在 127.0.0.1:7878
+  ```
+  [webserver]
+  address=127.0.0.1:7878
+  host_string=http://192.168.200.2/jepp/
+  ```
+* nginx 工作在 192.168.200.2:80
+  ```
+  location /jepp/ {
+    proxy_http_version 1.1;
+    proxy_pass http://127.0.0.1:7878/jepp/;
+    proxy_set_header XForwarded-For $proxy_add_x_forwarded_for;
+  }
+  location /jeppS/ {
+    proxy_http_version 1.1;
+    proxy_pass http://127.0.0.1:7878/jeppS/;
+    proxy_set_header XForwarded-For $proxy_add_x_forwarded_for;
+  }
+  ```
+* 用浏览器访问 http://192.168.200.2/jepp/ 就能看到说明。
