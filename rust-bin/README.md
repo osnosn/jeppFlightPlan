@@ -166,4 +166,5 @@ insert into  alternate values('CANSYD01','330','A330','NZAA,AYPY,NWWW,NZCH,RPLL,
     proxy_set_header XForwarded-For $proxy_add_x_forwarded_for;
   }
   ```
-* 用浏览器访问 http://192.168.200.2/jepp/ 就能看到说明。
+* 用浏览器访问 http://192.168.200.2/jepp/ 就能看到说明。   
+  网页的登录账号，用 db 的 user 表中的账号，test/test001   
