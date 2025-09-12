@@ -3,7 +3,7 @@ Executable binary file.
 Write in rust on 2024-1-26. 用rust重写。   
 Compiled by cargo.(rustup-1.26.0, rustc-1.70.0, cargo-1.70.0)   
 Use rusqlite-0.30.0 crate.   
- | 【[Download 下载](https://github.com/osnosn/jeppFlightPlan/releases)】 v0.3.2 |   |
+ | 【[Download 下载](https://github.com/osnosn/jeppFlightPlan/releases)】 v0.3.5 |   |
  |--------|-------|
  | jeppFlightPlan_aarch64-linux-gnu.gz      | arm 64bit linux 命令行的可执行文件 |
  | jeppFlightPlan_x86_64-linux-gnu.gz       | x86 64bit linux 命令行的可执行文件 |
