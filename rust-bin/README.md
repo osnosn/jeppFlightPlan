@@ -46,7 +46,7 @@ Usage: jeppFlightPlan [-h | --help] [-c config.ini] [run | showini | createdb]
  host_string=http://127.0.0.1:7878   #程序输出的内容中,链接到自身的地址.可以使用域名。末尾无"/".
  #没有使用反向代理时，"host_string=" 的域名/IP指向的是"address="的IP和端口。协议头为"http://"。
  #使用了反向代理时，"host_string=" 的域名/IP指向的是"反向代理服务"的IP和端口。协议头为"http://"或"https://"。
- #如果被反向代理映射到自定义目录，"host_string=" 要以"/"结尾。如: "https://ip:port/myjeppQuery/"
+ #如果被反向代理映射到自定义目录，"host_string=" 要以"/"结尾。如: "https://ip:port/myjepp/"
 
  #数据设置
  [flightplan]
