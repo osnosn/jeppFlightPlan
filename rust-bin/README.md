@@ -124,7 +124,7 @@ insert into  alternate values('CANSYD01','330','A330','NZAA,AYPY,NWWW,NZCH,RPLL,
    配置iPad的jeppFD的URL，就可以使用https连接，提高安全性。
  没有使用反向代理时，"host_string=" 的域名/IP指向的是"address="的IP和端口。协议头为"http://"。不要以"/"结尾。
  使用了反向代理时，"host_string=" 的域名/IP指向的是"反向代理服务"的IP和端口。协议头为"http://"或"https://"。
- 如果被反向代理映射到自定义目录，"host_string=" 要以"/"结尾。如: "https://ip:port/myjeppQuery/"
+ 如果被反向代理映射到自定义目录，"host_string=" 要以"/"结尾。如: "https://ip:port/myjepp/"
 
  在 ipad 自带的系统设置 "设置" -> 在左侧找到 "FD Pro" 或 "FD Pro X" -> ACCOUNT INFO "Services"
   FLIGHT PLANS
