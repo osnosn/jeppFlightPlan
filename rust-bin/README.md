@@ -151,14 +151,13 @@ insert into  alternate values('CANSYD01','330','A330','NZAA,AYPY,NWWW,NZCH,RPLL,
   ```
   [webserver]
   address=127.0.0.1:7878
-  host_string=http://192.168.200.2/jepp/
+  host_string=http://192.168.200.2/myjepp/
   ```
 * nginx 工作在 192.168.200.2:80
   ```
-  location /jepp/ {
+  location /myjepp/ {
     proxy_http_version 1.1;
-    proxy_pass http://127.0.0.1:7878;
-    #or# proxy_pass http://127.0.0.1:7878/jepp/;
+    proxy_pass http://127.0.0.1:7878/jepp/;
     proxy_set_header XForwarded-For $proxy_add_x_forwarded_for;
   }
   location /jeppS/ {
