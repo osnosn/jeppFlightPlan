@@ -1,8 +1,8 @@
-Executable binary file. 2022-10.   
+Executable binary file. 2025-09.   
 
-Compiled by golang-1.16.   
+Compiled by golang-1.18.   
   use go-sqlite3 1.14.3   
- | 【[Download 下载](https://github.com/osnosn/jeppFlightPlan/releases)】 v-1.3 |   |
+ | 【[Download 下载](https://github.com/osnosn/jeppFlightPlan/releases)】 v-1.4 |   |
  |--------|-------|
  | aarch64-linux-jeppFlightPlan.gz        | arm 64bit linux 命令行的可执行文件 |
  | amd64-linux-jeppFlightPlan.gz          | x86 64bit linux 命令行的可执行文件 |
@@ -47,7 +47,7 @@ CREATE TABLE flightPlan (
       route varchar(4096)       -- 空格分隔,标准航路格式,
       );
 CREATE TABLE user (
-      uid smallint unsigned not null primary key default 0,  -- 如需实现不同帐号相同uid,(需要去掉primary key)
+      uid smallint unsigned not null primary key default 1,  -- 如需实现不同帐号相同uid,(需要去掉primary key)
                                                  -- uid必须 >=0; 其中 uid=0 为特殊用户,可以查询所有的航线数据.
       username varchar(32) not null default '',  -- 用户名 ,部分特殊字符可能不支持(:@?)
       password varchar(64) default ''            -- 密码
