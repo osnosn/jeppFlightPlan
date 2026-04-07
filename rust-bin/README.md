@@ -171,3 +171,28 @@ insert into  alternate values('CANSYD01','330','A330','NZAA,AYPY,NWWW,NZCH,RPLL,
   ```
 * 用浏览器访问 http://192.168.200.2/myjepp/ 就能看到说明。   
   网页的登录账号，用 db 的 user 表中的账号，test/test001   
+
+## haproxy 配置样例
+* haproxy 工作在 192.168.200.2:80
+  ```
+  frontend main
+     bind :80
+     mode http
+     option httplog
+     option httpclose
+     log /dev/log local0
+     acl jepp path_beg -i /jepp
+     redirect scheme https code 307 if !{ ssl_fc } !jepp   #非/jepp的访问,强制跳转到https
+     use_backend jepp_web if jepp
+     default_backend web
+  backend jepp_web
+     mode http
+     option forwardfor
+     server jeppfp 127.0.0.1:7878 check
+  backend web
+     mode http
+     server uhttpd 127.0.0.1:8080 check
+  ```
+* 用浏览器访问 http://192.168.200.2/jepp/ 就能看到说明。   
+  网页的登录账号，用 db 的 user 表中的账号，test/test001   
+

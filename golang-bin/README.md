@@ -127,3 +127,8 @@ insert into  alternate values('CANSYD01','330','A330','NZAA,AYPY,NWWW,NZCH,RPLL,
   显示帮助:       amd64-linux-jeppFlightPlan  -h 
   显示详细的帮助: amd64-linux-jeppFlightPlan  --help 
 ```
+------
+## nginx 或 haproxy 配置
+* 与 rust 版类似.   
+* 也支持 X-Forwarded-For  
+
